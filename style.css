@@ -85,4 +85,31 @@ body{
     box-shadow: 0 0 10px red;
 }  
 
+/*Seconde Page*/
+
+.container{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 5px solid red;
+    border-radius: 10px;
+    padding: 10px 10px;
+   
+}
+.next-btn{
+    margin-left: 20px;
+    padding: 5px 30px;
+    background-color: red;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
 
