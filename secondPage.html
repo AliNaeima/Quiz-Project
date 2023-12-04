@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Quiz</title>
+   
 </head>
 <body>
     <main>
@@ -22,7 +23,7 @@
        
         
            <div class="question">
-            <h2>1. Who won the FIFA Ballon d'Or in 2021?</h2><br><br>
+            <h2 class="question-text">1. Who won the FIFA Ballon d'Or in 2021?</h2><br><br>
                <input type="radio" value="Lionel" name="ballon" id="LionelMessi">
                <label for="LionelMessi">Lionel Messi</label><br><br>
 
@@ -38,7 +39,7 @@
            
           <div class="question-footer">
             <span class="counter"> 1 of 10 Questions</span>
-            <button class="next-btn">Next</button>
+            <button class="next-btn" onclick="nextQuestion()">Next</button>
           </div>
       </div>
     </section>

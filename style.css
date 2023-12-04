@@ -109,6 +109,16 @@ body{
     border: none;
     cursor: pointer;
 }
+.question-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.counter{
+    font-size: 16px;
+    font-weight: 600;
+}
 
 
 
