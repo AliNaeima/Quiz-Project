@@ -6,12 +6,23 @@
     
 }
 body{
-   min-height: 100vh;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+.firstStage{
+    min-height: 100vh;
    background: url(Fotboll.jpg) no-repeat;
    background-size: cover;
    background-position: center;
    color: white;
+
 }
+.firstStage.active{
+    filter:blur(50px);
+}
+
 .header{
     position: fixed;
     left: 0;
@@ -49,8 +60,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     width: 100%;
+    position: relative;
+    left: -50%;
 }
 .sec-middle{
     max-width: 650;
@@ -68,7 +80,7 @@ body{
     text-align: center;
     margin-top: 20px;
 }
-.start-btn{
+.startBtn{
     margin-top: 30px;
     padding: 10px 20px;
     font-size: 20px;
@@ -80,7 +92,7 @@ body{
     background-color: black;
     color:white ;
 } 
-.start-btn:hover{
+.startBtn:hover{
     background-color:red;
     box-shadow: 0 0 10px red;
 }  
@@ -109,12 +121,8 @@ body{
     border: none;
     cursor: pointer;
 }
-.question-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
+
+
 .counter{
     font-size: 16px;
     font-weight: 600;
@@ -162,6 +170,57 @@ body{
     box-shadow: 0 0 10px red;
     border: black;
 }
+.informationcontainer.active{
+    opacity: 1;
+    pointer-events: auto;
+    
+}
+.secondPage{
+    display: flex;
+    height: 100vh;
+    width: 200%;
+}
+.form1.active{
+    left: 0;
+}
+
+.form1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    left: -50%;
+    width: 100%;
+    background-color: black;
+    z-index: 100;
+    transition: .10s ease-in-out;
+    transition-delay: .50s;
+    
+}
+.addQuestion{
+    border: 2px solid gray ;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+.question-footer{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px; ;
+    
+}
+.counter{
+    font-size: 20px;
+   
+}
+.nextbtn{
+    font-size: 20px;
+}
+label{
+    cursor: pointer;
+}
+
 
 
 

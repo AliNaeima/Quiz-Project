@@ -8,16 +8,48 @@
     <title>Quiz</title>
 </head>
 <body>
-    <main>
+    <main class="firstStage">
         <header class="header">
             <a href="firstPage.html" class="logo">FootballQuiz</a>
 
             <nav class="nav">
-                <a href="firstPage.html" class="active">Home</a>
+                <a href="#" class="Home">Home</a>
                 <a href="#">About</a>
                 <a href="#">Contact</a>
             </nav>
         </header>
+        
+
+        
+       <div class="secondPage">
+        
+        <form class="form1">
+            <div class="addQuestion">
+                <h2 class="tQuestion">1. Who won the FIFA Ballon d'Or in 2021?</h2><br><br>
+               <input type="radio" value="Lionel" name="ballon" id="LionelMessi">
+               <label for="LionelMessi">Lionel Messi</label><br><br>
+
+               <input type="radio" value="Robert" name="ballon" id="RobertLewandowski">
+               <label for="RobertLewandowski">Robert Lewandowski</label><br><br>
+
+               <input type="radio" value="Cristiano" name="ballon" id="CristianoRonaldo">
+               <label for="CristianoRonaldo">Cristiano Ronaldo</label><br><br>
+
+               <input type="radio" value="Kevin" name="ballon" id="Kevindebruyne">
+               <label for="Kevindebruyne">Kevin De Bruyne</label><br><br><br>
+               <hr>
+        
+           
+          <div class="question-footer">
+            <span class="counter">1 of 10 Questions</span>
+            <button class="nextbtn">Next</button>
+          </div>
+
+            </div>
+
+        </form>
+        
+
 
         <section class="sec">
             <div class="sec-middle">
@@ -25,12 +57,13 @@
                 <p>Test your football quiz knowledge & play our football games online <br>
                     Different footballers & clubs to solve every day <br>
                     Prove your elite football knowledge & share your score on social</p>
-                    <a href="secondPage.html"><button class="start-btn">Start Quiz</button></a>
+                   <button class="startBtn">Start Quiz</button>
 
             </div>
         </section>
+       </div>
     </main>
-    <div class="informationcontainer">
+    <div class="informationcontainer ">
         <h3>Quiz rule</h3>
         <p class="rule">1.Lorem ipsum, dolor sit amet consectetur </p>
         <p class="rule">2.Lorem ipsum, dolor sit amet consectetur </p>
@@ -38,8 +71,8 @@
         <hr>
 
         <div class="btn1">
-            <button class="informationBtn btn-exit">exit quiz</button>
-            <a href="#" class="informationBtn btn-continue">Continue</a>
+            <button class="informationBtn closeBtn">exit quiz</button>
+            <a href="#" class="informationBtn btnContinue">Continue</a>
         </div>
     </div>
 </body>
