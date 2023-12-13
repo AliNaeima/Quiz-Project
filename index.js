@@ -1,3 +1,4 @@
+
 var btnStart = document.querySelector('.btnStart');
 var informaion = document.querySelector('.informaion');
 var colseBtn = document.querySelector('.colseBtn');
