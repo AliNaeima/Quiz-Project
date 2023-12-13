@@ -1,79 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="index.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Quiz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
 </head>
 <body>
-    <main class="firstStage">
-        <header class="header">
-            <a href="firstPage.html" class="logo">FootballQuiz</a>
+  <div class="container">
+    <div class="Page2">
+        <section class="section">
+            <div class="box1">
+                
+                <div class="score">
+                   <p class="score2">Score: 0 / 10</p>
+                </div>
 
-            <nav class="nav">
-                <a href="#" class="Home">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </nav>
-        </header>
-        
+                <h2 class="question">Who won the FIFA Ballon d'Or in 2021?</h2>
 
-        
-       <div class="secondPage">
-        
-        <form class="form1">
-            <div class="addQuestion">
-                <h2 class="tQuestion">1. Who won the FIFA Ballon d'Or in 2021?</h2><br><br>
-               <input type="radio" value="Lionel" name="ballon" id="LionelMessi">
-               <label for="LionelMessi">Lionel Messi</label><br><br>
+                <div class="option-list">
+                    
+                </div>
+                <hr><br><br>
 
-               <input type="radio" value="Robert" name="ballon" id="RobertLewandowski">
-               <label for="RobertLewandowski">Robert Lewandowski</label><br><br>
-
-               <input type="radio" value="Cristiano" name="ballon" id="CristianoRonaldo">
-               <label for="CristianoRonaldo">Cristiano Ronaldo</label><br><br>
-
-               <input type="radio" value="Kevin" name="ballon" id="Kevindebruyne">
-               <label for="Kevindebruyne">Kevin De Bruyne</label><br><br><br>
-               <hr>
-        
-           
-          <div class="question-footer">
-            <span class="counter">1 of 10 Questions</span>
-            <button class="nextbtn">Next</button>
-          </div>
-
+                <div class="ner">
+                    <span class="totalQuestion">0 of 10 Questions</span>
+                    <button class="btnNext">Next</button>
+                </div>
             </div>
 
-        </form>
-        
+            <div class="box2">
+                <h2>Quiz Result</h2>
+                <div class="procentBox">
+                    <div class="circelBox">
+                        <p class="value">0%</p>
+                    </div>
 
+                    <span class="tScore">Your Score 0 out of 10</span>
+                </div>
 
-        <section class="sec">
-            <div class="sec-middle">
-                <h1>Football Quiz</h1>
-                <p>Test your football quiz knowledge & play our football games online <br>
-                    Different footballers & clubs to solve every day <br>
-                    Prove your elite football knowledge & share your score on social</p>
-                   <button class="startBtn">Start Quiz</button>
-
+                <div class="buttonPage3">
+                    <button class="btnTest">Prov Again</button>
+                    <button class="btnHome">Home</button>
+                </div>
             </div>
         </section>
-       </div>
-    </main>
-    <div class="informationcontainer ">
-        <h3>Quiz rule</h3>
-        <p class="rule">1.Lorem ipsum, dolor sit amet consectetur </p>
-        <p class="rule">2.Lorem ipsum, dolor sit amet consectetur </p>
-        <p class="rule">3.Lorem ipsum, dolor sit amet consectetur </p><br>
-        <hr>
 
-        <div class="btn1">
-            <button class="informationBtn closeBtn">exit quiz</button>
-            <a href="#" class="informationBtn btnContinue">Continue</a>
-        </div>
+        <section class="section2">
+            <div class="text">
+                <h1>Football Quiz</h1><br>
+                <p>Test your football quiz knowledge & play our football games online <br>
+                    Different footballers & clubs to solve every day <br>
+                    Prove your elite football knowledge & share your score on social</p><br>
+                <button class="btnStart">Start</button>
+            </div>
+        </section>
     </div>
+  </div>
+
+<div class="informaion">
+    <h2>Quiz Rule</h2><br>
+    <p>Here you can test your knowledge in a football quiz.</p><br><br>
+    <p>You get a direct answer to whether you have answered a question correctly or incorrectly.</p><br><br>
+    <p>When you have answered all the questions in the test, the total result is presented..</p><br><br>
+    <hr>
+    
+
+    <div class="btnPage1">
+        <button class="info colseBtn">Exit Quiz</button>
+        <a href="#" class="info continueBtn">Continue</a>
+    </div>
+</div>
 </body>
 </html>
+
+
+
+
+
+
+

@@ -1,226 +1,363 @@
-*{
-    padding: 0;
+* {
     margin: 0;
-    font-family: sans-serif;
+    padding: 0;
     box-sizing: border-box;
-    
-}
-body{
-  background-color: black;
-  color: white;
-  overflow: hidden;
+    font-family: sans-serif;
 }
 
-.firstStage{
-    min-height: 100vh;
-   background: url(Fotboll.jpg) no-repeat;
-   background-size: cover;
-   background-position: center;
-   color: white;
-
-}
-.firstStage.active{
-    filter:blur(50px);
-}
-
-.header{
-    position: fixed;
-    left: 0;
-    top: 0;
-    padding: 20px 10%;
-    width: 100%;
-    background:transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
-.header a{
-    text-decoration: none;
-    color: red;
-    font-size: 30px;
-    
-
-}
-.logo{
-    font-weight: 600;
-    
-}
-.nav a{
-    text-decoration: none;
+body {
     color: white;
-    font-size: 20px;
-    font-weight: 450px;
-    margin-left: 40px;
+    background:black;
+    overflow: hidden;
 }
-.nav a:hover{
-    color: orangered;
-}
-.sec{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    left: -50%;
-}
-.sec-middle{
-    max-width: 650;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-.sec-middle h1{
-    font-weight: 700;
-    font-size: 50px;
-}
-.sec-middle p{
-    font-size: 20px;
-    text-align: center;
-    margin-top: 20px;
-}
-.startBtn{
-    margin-top: 30px;
-    padding: 10px 20px;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    border: none;
-    transition: 0.5s;
-  
-    background-color: black;
-    color:white ;
-} 
-.startBtn:hover{
-    background-color:red;
-    box-shadow: 0 0 10px red;
-}  
-
-/*Seconde Page*/
-
 .container{
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    border: 5px solid red;
-    border-radius: 10px;
-    padding: 10px 10px;
-   
-}
-.nextbtn{
-    margin-left: 20px;
-    padding: 5px 30px;
-    background-color: red;
-    color: black;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
-
-
-.counter{
-    font-size: 16px;
-    font-weight: 600;
-}
-#result{
-    display: none;
-}
-.informationcontainer{
-    width: 400px;
-    padding: 20px 20px;
-    background: blue;
-    border-radius: 5px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    opacity: 0;
-    pointer-events: none;
-    text-align: center;
-}
-.informationcontainer h3{
-    color: yellow;
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-.informationcontainer .btn1{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 15px;
-  
-}
-.informationBtn{
-    background-color: black;
-    color: white;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 5px 5px;
-    transition: 0.5s;
-    text-decoration: none;
-    cursor: pointer;
-}
-.informationBtn:hover{
-    background: red;
-    box-shadow: 0 0 10px red;
-    border: black;
-}
-.informationcontainer.active{
-    opacity: 1;
+    min-height: 100vh;
+    background: url('Fotboll.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
     pointer-events: auto;
     
 }
-.secondPage{
-    display: flex;
-    height: 100vh;
-    width: 200%;
-}
-.form1.active{
-    left: 0;
+
+.container.active {
+    filter: blur(50px);
+    pointer-events: none;
 }
 
-.form1{
+.Page2 {
+    
+    height: 100vh;
+    width: 200%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+
+.section2{
+    left: -50%;
+    width: 100%;
+    position: relative;
+    display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.text {
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text h1 {
+    font-size: 70px;
+    font-weight: 700;
+    color: red;
+}
+
+.text p {
+    font-size: 16px;
     text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    margin-bottom: 30px;
+}
+
+.text .btnStart {
+    width: 190px;
+    height: 55px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.text .btnStart:hover {
+    background-color: red;    
+    
+}
+
+.informaion {
+    position: absolute;
+    width: 600px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(.9);
+    padding: 15px 15px;
+     background-color: gray;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.informaion.active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    pointer-events: auto;
+}
+
+.informaion h2 {
+    font-size: 60px;
+    color: purple;
+    text-align: center;
+}
+
+.informaion p{
+    display: inline-block;
+    margin: 5px 5px;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+}
+
+.informaion .btnPage1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.btnPage1 .info {
+    width: 120px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 1s;
+}
+.btnPage1 .info:hover{
+    background-color: red;
+}
+
+/*Page 2*/
+
+.section {
+    background-color: gray;
     position: relative;
     left: -50%;
     width: 100%;
-    background-color: black;
-    z-index: 100;
-    transition: .10s ease-in-out;
-    transition-delay: .50s;
-    
-}
-.addQuestion{
-    border: 2px solid gray ;
-    padding: 20px 20px;
-    border-radius: 5px;
-}
-.question-footer{
     display: flex;
-    justify-content: space-around;
-    padding-top: 20px; ;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.section.active {
+    left: 0;
+}
+
+.section .box1 {
+    width: 450px;
+    padding: 20px 20px;
+    position: relative;
+    background-color: transparent;
+    border: 5px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.section .box1.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.box1 h2 {
+    font-size: 30px;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.box1 .score {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.score p {
+    background: black;
+    padding: 10px;
+}
+
+.box1 .question {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.option-list .option {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.option-list .option:hover {
+   background-color: black;
+    border-color:white;
+}
+
+.option-list .option.correct {
+    background-color: black;
+    color: white;
+    border-color: green;
+}
+
+.option-list .option.incorrect {
+    background-color: black;
+    color: white;
+    border-color: red;
+}
+
+.option-list .option.disabled {
+    pointer-events: none;
+}
+
+.box1 .ner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ner .totalQuestion {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+
+.ner .btnNext {
+    width: 100px;
+    height: 50px;
+    color: white;
+   background-color: black;
+    border: 2px solid white;
+   border-radius: 5px;
+    font-size: 20px;
+   font-weight: 600;
+    cursor: pointer;
+    pointer-events: none;
+    transition: 1s;
+}
+
+.ner .btnNext.active {
+    pointer-events: auto;
+    color: white;
+    background-color: black;
+    border-color: white;
     
 }
-.counter{
-    font-size: 20px;
-   
+
+.ner .btnNext.active:hover {
+    background: red;
+    border-color: white;
 }
-.nextbtn{
-    font-size: 20px;
+
+/* Page 3*/
+
+.section .box2 {
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    background-color:peru;
+    border: 2px solid peru;
+    border-radius: 5px;
+    padding: 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s;
 }
-label{
+
+.section .box2.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) ;
+}
+
+.box2 h2 {
+    font-size: 50px;
+    color: black;
+}
+
+.box2 .procentBox {
+    width: 400px;
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.procentBox .circelBox {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.procentBox .circelBox::before {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circelBox p {
+    position: relative;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.procentBox .tScore {
+    color: black;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+
+.buttonPage3 button {
+    width: 130px;
+    height: 47px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 0 15px 15px;
     cursor: pointer;
+    transition: 1s;
 }
 
-
-
-
+.buttonPage3 button:hover{
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+}
